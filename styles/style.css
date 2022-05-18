@@ -1385,6 +1385,18 @@ a {
     box-sizing: border-box;
     margin: 0 auto;
   }
+  .form-confirm {
+    display: flex;
+  }
+  .form-confirm__title {
+    width: 199px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .form-confirm__content {
+    margin-top: 0;
+    margin-left: 66px;
+  }
 }
 
 @media (min-width: 1000px) {
