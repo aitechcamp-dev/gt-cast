@@ -1168,6 +1168,148 @@ a {
   display: none;
 }
 
+/* contact ページ */
+#contact {
+  width: 100%;
+}
+
+.contact-body__wrap {
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 1080PX;
+  margin: 0 auto;
+}
+
+.contact-body__wrap ul, .contact-body__wrap li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* contact-トップタイトル */
+.contact-top {
+  width: 100%;
+  height: 236px;
+  background: -webkit-image-set(url(../images/contact/contact_tv.jpg) 1x, url(../images/contact/contact_tv@2x.jpg) 2x) center center/cover;
+}
+
+/* contact-パンくずリスト */
+.contact-breadcrumbs {
+  font-size: 16px;
+  color: #03034A;
+}
+
+.contact-breadcrumbs ol {
+  padding-left: 0;
+}
+
+.contact-breadcrumb01__item {
+  display: inline;
+  position: relative;
+  line-height: 1.5;
+  color: #03034A;
+}
+
+.contact-breadcrumb01__item:not(:first-child) {
+  margin-left: 24px;
+}
+
+.contact-breadcrumb01__item:not(:last-child):after {
+  position: absolute;
+  content: "\f054";
+  top: 50%;
+  right: -16px;
+  transform: translateY(-50%);
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #03034A;
+}
+
+.contact-breadcrumb01__item a {
+  transition: .2s ease-in-out;
+  color: #03034A;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.contact-breadcrumb01__item a:hover {
+  opacity: 0.7;
+}
+
+/* contact-メインセクション */
+.contact-progress__img {
+  width: 100%;
+  height: min( 10.9vw, 41px);
+  text-align: center;
+  margin-top: 60px;
+}
+
+.contact-progress__img img {
+  width: auto;
+  height: 100%;
+}
+
+.contact-content__text {
+  margin-top: 40px;
+}
+
+/* 入力フォーム */
+.contact-form {
+  margin-top: 48px;
+}
+
+.form__radio-list li {
+  margin-top: 8px;
+}
+
+/* 入力フォームの下 */
+.contact-reception {
+  margin-top: 30px;
+  text-align: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #03034A;
+}
+
+.contact-reception address {
+  font-style: unset;
+  display: inline;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 内容確認ページ */
+.contact-content__title {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.contact-content__title span {
+  display: inline-block;
+}
+
+.contact-form__confirm {
+  margin-top: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid #646464;
+}
+
+/* 送信完了ページ */
+.contact-finish__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-content__txt {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.contact_min600 {
+  display: none;
+}
+
 @media (min-width: 600px) {
   /*スマホ (600up)メニュー*/
   /* CTA */
@@ -1191,6 +1333,14 @@ a {
     padding-right: 32px;
   }
   .estimate_min600 {
+    display: block;
+  }
+  /* contact 600up */
+  .contact-content__txt {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .contact_min600 {
     display: block;
   }
 }
@@ -1424,6 +1574,27 @@ a {
   .estimate-content__title {
     font-size: 36px;
   }
+  /* contact 768up */
+  .contact {
+    max-width: 817px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .form-confirm {
+    display: flex;
+  }
+  .form-confirm__title {
+    width: 199px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .form-confirm__content {
+    margin-top: 0;
+    margin-left: 66px;
+  }
+  .contact-content__title {
+    font-size: 36px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -1528,6 +1699,17 @@ a {
     width: 100%;
     height: 250px;
     background: -webkit-image-set(url(../images/estimate/estimate_tv_1000up.jpg) 1x, url(../images/estimate/estimate_tv_1000up@2x.jpg) 2x) center center/cover;
+  }
+  /* contact 1000up */
+  .contact-body__wrap {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  /* contact-トップタイトル */
+  .contact-top {
+    width: 100%;
+    height: 250px;
+    background: -webkit-image-set(url(../images/contact/contact_tv_1000up.jpg) 1x, url(../images/contact/contact_tv_1000up@2x.jpg) 2x) center center/cover;
   }
 }
 

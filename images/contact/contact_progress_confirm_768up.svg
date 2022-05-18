@@ -1,0 +1,55 @@
+<svg id="estimate_progress_middle_768up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="598" height="40" viewBox="0 0 598 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_127" data-name="長方形 127" width="598" height="40" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="長方形_126" data-name="長方形 126" width="77.023" height="18.977" transform="translate(459.488 11.92)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="長方形_128" data-name="長方形 128" width="77.023" height="18.977" transform="translate(260.488 11.92)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect id="長方形_130" data-name="長方形 130" width="77.023" height="18.977" transform="translate(61.488 11.92)" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="長方形_124" data-name="長方形 124" width="199" height="39" transform="translate(398.5 0.5)" fill="#fff"/>
+  <g id="グループ_186" data-name="グループ 186">
+    <g id="グループ_185" data-name="グループ 185" clip-path="url(#clip-path)">
+      <rect id="長方形_125" data-name="長方形 125" width="199" height="39" transform="translate(398.5 0.5)" fill="none" stroke="#03034a" stroke-width="1"/>
+      <g id="グループ_184" data-name="グループ 184" style="isolation: isolate">
+        <g id="グループ_183" data-name="グループ 183">
+          <g id="グループ_182" data-name="グループ 182" clip-path="url(#clip-path-2)">
+            <text id="_3.送信完了" data-name="3.送信完了" transform="translate(459.488 26)" fill="#03034a" font-size="16" font-family="Helvetica"><tspan x="0" y="0">3.</tspan><tspan y="0" font-family="HiraginoSans-W3, Hiragino Sans">送信完了</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <path id="パス_551" data-name="パス 551" d="M199.5.5v39h199l12-19.58L398.5.5Z" fill="#03034a"/>
+  <g id="グループ_191" data-name="グループ 191">
+    <g id="グループ_190" data-name="グループ 190" clip-path="url(#clip-path)">
+      <path id="パス_552" data-name="パス 552" d="M398.5,39.5h-199V.5h199l12,19.42Z" fill="none" stroke="#03034a" stroke-width="1"/>
+      <g id="グループ_189" data-name="グループ 189" style="isolation: isolate">
+        <g id="グループ_188" data-name="グループ 188">
+          <g id="グループ_187" data-name="グループ 187" clip-path="url(#clip-path-4)">
+            <text id="_2.内容確認" data-name="2.内容確認" transform="translate(260.488 26)" fill="#fff" font-size="16" font-family="Helvetica"><tspan x="0" y="0">2.</tspan><tspan y="0" font-family="HiraginoSans-W3, Hiragino Sans">内容確認</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <path id="パス_553" data-name="パス 553" d="M.5.5v39h199l12-19.58L199.5.5Z" fill="#fff"/>
+  <g id="グループ_196" data-name="グループ 196">
+    <g id="グループ_195" data-name="グループ 195" clip-path="url(#clip-path)">
+      <path id="パス_554" data-name="パス 554" d="M199.5,39.5H.5V.5h199l12,19.42Z" fill="none" stroke="#03034a" stroke-width="1"/>
+      <g id="グループ_194" data-name="グループ 194" style="isolation: isolate">
+        <g id="グループ_193" data-name="グループ 193">
+          <g id="グループ_192" data-name="グループ 192" clip-path="url(#clip-path-6)">
+            <text id="_1.内容入力" data-name="1.内容入力" transform="translate(61.488 26)" fill="#03034a" font-size="16" font-family="Helvetica"><tspan x="0" y="0">1.</tspan><tspan y="0" font-family="HiraginoSans-W3, Hiragino Sans">内容入力</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

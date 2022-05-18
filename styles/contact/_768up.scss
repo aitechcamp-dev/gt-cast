@@ -1,0 +1,23 @@
+@import "../common/system";
+
+/* contact 768up */
+.contact{
+  max-width: 817px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.form-confirm{
+  display: flex;
+}
+.form-confirm__title{
+  width: 199px;
+  text-align: right;
+  flex-shrink: 0;
+}
+.form-confirm__content{
+  margin-top: 0;
+  margin-left: 66px;
+}
+.contact-content__title{
+  font-size: 36px;
+}
