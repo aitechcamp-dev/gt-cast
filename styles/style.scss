@@ -13,6 +13,7 @@
 @import "company/base";//岩尾追加
 @import "estimate/base";//岩尾追加
 @import "contact/base";//岩尾追加
+@import "recruit/base";//岩尾追加
 
 
 @media (min-width: 600px) {
@@ -27,6 +28,7 @@
   @import "company/768up";//岩尾追加
   @import "estimate/768up";//岩尾追加
   @import "contact/768up";//岩尾追加
+  @import "recruit/768up";//岩尾追加
 }
 @media (min-width: 1000px) {
   @import "header/1000up";
