@@ -1,0 +1,86 @@
+.mainvisual {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 0;
+
+  &__inner {
+    position: relative;
+    height: 600px;
+  }
+
+  &__slide {
+    backface-visibility: hidden;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+
+    &::before {
+      background-color: var(--background-filcolor);
+      content: "";
+      z-index: 1;
+      @extend .common__filterlayer;
+    }
+  }
+
+  &__textcontainer {
+    @extend .container__width;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+    align-items: flex-start;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: #FFF;
+  }
+
+  &__imglayer {
+    z-index: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__img {
+    display: block;
+    height: 100% !important;
+    object-fit: cover;
+    width: 100% !important;
+    border-style: none;
+    height: auto;
+    max-width: 100%;
+  }
+
+  &__textlayer {
+    &-left {
+      display: block;
+      width: 420px;
+    }
+
+    &-right {
+      display: none;
+    }
+  }
+
+  &__title {
+    @extend .font__57;
+    @extend .line-height__73;
+    font-weight: normal;
+    margin: 40px 0 20px 0;
+
+    &-little {
+      @extend .font__41;
+    }
+  }
+
+  &__explain {
+    font-size: 16px;
+  }
+}

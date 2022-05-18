@@ -25,25 +25,25 @@
   div:nth-child(2){
     margin-left: 10px;
   }
-  }
-  .common-cta__button{
-    margin-top: 0;
-  }
+}
+.common-cta__button{
+  margin-top: 0;
+}
 
 
-  /* フォーム */
-  .form-content{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    span{
-      flex-shrink: 0;
-    }
+/* フォーム */
+.form-content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  span{
+    flex-shrink: 0;
   }
+}
 
 .form__input{
-margin-top: -5px;
-margin-bottom: 20px;
+  margin-top: -5px;
+  margin-bottom: 20px;
 }
 .form__input--radio{
   display: flex;

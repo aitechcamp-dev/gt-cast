@@ -1,0 +1,40 @@
+.infoslider {
+  height: 65px;
+  position: relative;
+
+  &__inner {
+    font-size: 14px;
+    color: var(--color_base);
+    position: relative;
+    height: 110px;
+    top: -55px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  &__toptitle {
+    text-align: center;
+    font-weight: normal;
+    margin:15px 0 10px 0;
+  }
+  &__swiperbox{
+    height:55px !important;
+  }
+  &__box {
+    display: flex;
+   width: 90%;
+   margin:0 auto;
+    &>p {
+      display: inline-block;
+      margin-top:0;
+      margin-bottom:0;
+      line-height: 16px;
+    }
+  }
+  &__date{
+    margin-right:15px;
+  }
+}
