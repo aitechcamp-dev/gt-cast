@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="./styles/vendors/bootstrap-reboot.css" />
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/modules/swiper-bundle.min.css">
   <title>GT Cast</title>
 </head>
 
@@ -15,7 +16,7 @@
     <header class="header">
       <div class="header__container">
         <h1 class="header__logo">
-          <img src="/images/logo.png" alt="GT CAST" class="header__logo-img">
+          <img src="./images/logo.png" alt="GT CAST" class="header__logo-img">
           <p>株式会社ジーティキャスト</p>
         </h1>
         <button class="mobile-menu__btn">
@@ -131,32 +132,65 @@
     </div>
   </div>
   <div class="mainvisual">
-    <div class="mainvisual__container">
-      <picture class="mainvisual__imglayer">
-        <img src="" alt="" class="mainvisual__img">
-      </picture>
-      <div class="mainvisual__textlayer-left">
-        <h2 class="mainvisul__title">
-          非常時<span class="txt__l">から</span><br>
-          安心<span class="txt__l">を</span>守る<br>
-          エキスパート
-        </h2>
-        <p class="mainvisual__explain">
-          非常用の発電機の負荷試験・消防点検のことなら、<br>
-          「専門設備の点検20年の実績」でこれからのアナタの<br>
-          未来を守るジーティキャストへ！見る事に特化してきた<br>
-          企業だから、見逃さない確かな「目」。<br>
-          今後も幅広い業界に活かします。
-        </p>
-      </div>
-      <div class="mainvisual__textlayer-right">
-        Protecting your peace of mind<br>
-        Experts
+    <div class="mainvisual__inner">
+
+      <div class="mainvisual__slide">
+        <picture class="mainvisual__imglayer">
+          <img src="./images/mainvisual/main.png" alt="" class="mainvisual__img">
+        </picture>
+        <div class="mainvisual__textcontainer">
+          <div class="mainvisual__textlayer-left">
+            <h2 class="mainvisual__title">
+              非常時<span class="mainvisual__title-little">から</span><br>
+              安心<span class="mainvisual__title-little">を</span>守る<br>
+              エキスパート
+            </h2>
+            <p class="mainvisual__explain">
+              非常用の発電機の負荷試験・消防点検のことなら、
+              「専門設備の点検20年の実績」でこれからのアナタの
+              未来を守るジーティキャストへ！見る事に特化してきた
+              企業だから、見逃さない確かな「目」。
+              今後も幅広い業界に活かします。
+            </p>
+          </div>
+          <div class="mainvisual__textlayer-right">
+            <p>Protecting your peace of mind</p>
+            <p>Experts</p>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="infoslider">
+      <div class="infoslider__inner swiper">
+        <h3 class="infoslider__toptitle">お知らせ</h3>
+        <div class="swiper-wrapper infoslider__swiperbox">
+          <div class="swiper-slide ">
+            <div class="infoslider__box">
+              <p class="infoslider__date">2022.04.03</p>
+              <p class="infoslider__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れてい...</p>
+            </div>
+          </div>
+          <div class="swiper-slide ">
+            <div class="infoslider__box">
+              <p class="infoslider__date">2022.04.03</p>
+              <p class="infoslider__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れてい...</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
   </div>
+  <div class="selectreason">
+    <h2 class="selectreason__title">
+      <p class="selectreason__title-sub">Three Reasons to Choose GTCAST</p>
+      <p class="selectreason__title-main">ジーティキャストが <br class="selectreason__title-br">選ばれる<spna
+          class="selectreason__title-large">3</spna>つの理由</p>
+    </h2>
   </div>
-  <script src="scripts/menubtn.js"></script>
+
+
   <footer class="footer">
     <div class="footer__nav">
       <ul class="footernav__lists">
@@ -199,7 +233,7 @@
     </div>
     <div class="footer__mediabox">
       <a href="#" class="footer__logobox">
-        <img src="/images/logo-pc.png" alt="GT CAST" class="footer__logo-img">
+        <img src="./images/logo-pc.png" alt="GT CAST" class="footer__logo-img">
       </a>
       <div class="footer__tell">
         <p class="footer__tell-time">受付時間00:00〜00:00</p>
@@ -240,6 +274,9 @@
       </ul>
     </div>
   </footer>
+    <script src="scripts/menubtn.js"></script>
+  <script src="./scripts/swiper/swiper-bundle.min.js"></script>
+  <script src="./scripts/main.js"></script>
 </body>
 
 </html>

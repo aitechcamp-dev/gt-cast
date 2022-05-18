@@ -1,0 +1,34 @@
+.selectreason {
+  &__title {
+    text-align: center;
+          @include inter_db;
+          color:var(--color_titlebase);
+          position:relative;
+
+    &-sub{
+      font-size:16px; 
+      margin:0;
+    }
+    &-main{
+      font-size:32px;
+      font-weight:normal;
+      margin:0;
+      line-height: 45px;
+    }
+    &-large{
+      font-size:56px;
+      font-weight:bold;
+    }
+    &::after{
+      content:"";
+      width: 100px;
+      height: 1px;
+      display: block;
+      background-color: var(--color_titlebase);
+      transform: translateX(-50%);
+      position:relative;
+      left:50%;
+      margin-top:10px;
+    }
+  }
+}

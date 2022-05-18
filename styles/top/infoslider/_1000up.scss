@@ -1,0 +1,24 @@
+.infoslider {
+  &__inner{
+    height:50px;
+    top:-25px;
+    display: flex;
+    max-width: 960px;
+    // padding-left:10% !important;
+    // padding-right:10% !important;
+  }
+  &__toptitle{
+    position: relative;
+    z-index: 2;
+    width: 23%;
+    background-color:#FFF;
+  }
+  &__swiperbox{
+    width: 70% !important;
+    // overflow: hidden;
+  }
+  &__box{
+    align-items: center;
+    height: 100%;
+  }
+}
