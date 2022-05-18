@@ -1,0 +1,67 @@
+/*タブレット (768up)メニュー*/
+
+/* CTA */
+.common-cta{
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.common-cta__wrap{
+  // width: unset; 
+  width: 670px;
+}
+.common-cta__flex{
+  display: flex;
+  align-items: center;
+  margin-top: -18px;
+}
+.common-cta__tell{
+  margin-top: 41px;
+  height: 55px;
+}
+.common-cta__btnbox{
+  display: inline-block;
+  margin-left: 50px;
+  div:nth-child(2){
+    margin-left: 10px;
+  }
+  }
+  .common-cta__button{
+    margin-top: 0;
+  }
+
+
+  /* フォーム */
+  .form-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    span{
+      flex-shrink: 0;
+    }
+  }
+
+.form__input{
+margin-top: -5px;
+margin-bottom: 20px;
+}
+.form__input--radio{
+  display: flex;
+  align-items: flex-start;
+}
+.form__radio-list{
+  // display: flex;
+  li{
+    margin-top: 5px;
+  }
+}
+.form__radio{
+  margin-top: 0;
+}
+.form__input{
+  max-width: 540px;
+}
+.form__check-box-list{
+  width: 100%;
+  text-align: center;
+}

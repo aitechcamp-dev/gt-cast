@@ -1,0 +1,114 @@
+@import "../common/system";
+
+/* estimate ページ */
+#estimate{
+  width: 100%;
+}
+
+.estimate-body__wrap{
+    padding-right: 16px;
+    padding-left: 16px;
+    max-width: 1080PX;
+    margin: 0 auto;
+    ul,li{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+}
+
+/* estimate-トップタイトル */
+.estimate-top{
+  width: 100%;
+  height: 236px;
+  background: -webkit-image-set(url(../images/estimate/estimate_tv.jpg) 1x, url(../images/estimate/estimate_tv@2x.jpg) 2x) center center/cover;
+}
+
+/* estimate-パンくずリスト */
+.estimate-breadcrumbs{
+  font-size: 16px;
+  color: $c-primary;
+  ol{
+    padding-left: 0;
+  }
+}
+.estimate-breadcrumb01__item {
+  display: inline;
+  position: relative;
+  line-height: 1.5;
+  color: $c-primary;
+  // font-weight: bold;
+}
+.estimate-breadcrumb01__item:not(:first-child) {
+  margin-left: 24px;
+}
+.estimate-breadcrumb01__item:not(:last-child):after {
+  position: absolute;
+  content: "\f054";
+  top: 50%;
+  right: -16px;
+  transform: translateY(-50%);
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: $c-primary;
+}
+.estimate-breadcrumb01__item a {
+  transition: .2s ease-in-out;
+  color: $c-primary;
+  text-decoration: none;
+  font-weight: normal;
+}
+.estimate-breadcrumb01__item a:hover {
+  opacity: 0.7;
+}
+
+/* estimate-メインセクション */
+.estimate-progress__img{
+  width: 100%;
+  height: unquote('min( 10.9vw, 41px)');
+  text-align: center;
+  margin-top: 60px;
+  img{
+    width: auto;
+    height: 100%;
+  }
+}
+.estimate-content__text{
+  margin-top: 40px;
+}
+
+/* 入力フォーム */
+.estimate-form{
+  margin-top: 48px;
+}
+.form__radio-list li{
+  margin-top: 8px;
+}
+/* 入力フォームの下 */
+.estimate-reception{
+  margin-top: 30px;
+  text-align: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid $c-primary;
+  address{
+    font-style: unset;
+    display: inline;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+/* 内容確認ページ */
+.estimate-content__title{
+  font-size: 24px;
+  text-align: center;
+  margin-top: 60px;
+  span{
+    display: inline-block;
+  }
+}
+.estimate-form__confirm{
+  margin-top: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid #646464;
+}

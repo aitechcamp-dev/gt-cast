@@ -1,0 +1,36 @@
+@import 'modules/menubtn';
+@import 'modules/common-btn';//岩尾追加
+
+@import "common/system";//岩尾追加
+@import "common/base";
+
+
+/*base:スマホ表示*/
+@import "header/base";
+@import "spnav/base";
+@import "footer/base";
+@import "about/base";//岩尾追加
+@import "company/base";//岩尾追加
+@import "estimate/base";//岩尾追加
+
+
+@media (min-width: 600px) {
+  @import "common/600up";//岩尾追加
+  @import "header/600up";
+}
+@media (min-width: 768px) {
+  @import "common/768up";//岩尾追加
+  @import "about/768up";//岩尾追加
+  @import "company/768up";//岩尾追加
+  @import "estimate/768up";//岩尾追加
+}
+@media (min-width: 1000px) {
+  @import "header/1000up";
+  @import "spnav/1000up";
+  @import "about/1000up";//岩尾追加
+  @import "company/1000up";//岩尾追加
+  @import "estimate/1000up";//岩尾追加
+}
+@media (min-width: 1100px) {
+  @import "header/1100up";
+}

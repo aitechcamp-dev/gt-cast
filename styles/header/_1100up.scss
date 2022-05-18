@@ -1,0 +1,11 @@
+.cta{
+    &__button {
+      padding: 1em 2vw;
+    }
+
+    &__estimate {
+      &>a {
+        margin-right: 10px;
+      }
+    }
+}

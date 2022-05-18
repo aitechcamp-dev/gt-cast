@@ -1,0 +1,36 @@
+.header {
+  height: 16vw;
+  width: 100%;
+  position: sticky;
+  background-color: #FFF;
+  top: 0;
+
+  &__container {
+    @extend .container__width;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    margin: 0;
+    align-items: center;
+
+    &>img {
+      width: 20.53vw;
+    }
+
+    &>p {
+      @extend .font__14;
+      font-weight: 600;
+    }
+  }
+
+  &__nav {
+    display: none;
+  }
+
+  &__cta {
+    display: none;
+  }
+}

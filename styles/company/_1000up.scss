@@ -1,0 +1,15 @@
+@import "../common/system";
+
+/* company 1000up */
+
+.company-body__wrap{
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+/* company-トップタイトル */
+.company-top{
+  width: 100%;
+  height: 250px;
+  background: -webkit-image-set(url(../images/company/company_tv_1000up.jpg) 1x, url(../images/company/company_tv_1000up@2x.jpg) 2x) center center/cover;
+}

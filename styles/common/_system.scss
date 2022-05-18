@@ -1,0 +1,20 @@
+// 変数
+// カラー
+$c-primary: #03034A;
+
+// フォントInter（英字）
+@mixin inter_m {
+    font-family: 'Inter', sans-serif;
+    font-variation-settings: "slnt" -10 ,"wght" 400;
+}
+@mixin inter_db {
+    font-family: 'Inter', sans-serif;
+    font-variation-settings: "slnt" -10 ,"wght" 500;
+}
+@mixin inter_b {
+    font-family: 'Inter', sans-serif;
+    font-variation-settings: "slnt" -10 ,"wght" 600;
+}
+
+// フォントサイズ
+$fz30-36: unquote('min( 8vw, 36px)'); 

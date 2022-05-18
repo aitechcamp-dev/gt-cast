@@ -1,0 +1,11 @@
+/*スマホメニュー*/
+.header {
+  &__logo{
+    &>img{
+      max-width: 125px;
+    }
+    &>p {
+      font-size:24px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../common/system";
+
+/* estimate 1000up */
+
+.estimate-body__wrap{
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+/* estimate-トップタイトル */
+.estimate-top{
+  width: 100%;
+  height: 250px;
+  background: -webkit-image-set(url(../images/estimate/estimate_tv_1000up.jpg) 1x, url(../images/estimate/estimate_tv_1000up@2x.jpg) 2x) center center/cover;
+}
