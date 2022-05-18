@@ -14,7 +14,7 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
     <link rel="stylesheet" href="styles/style.css">
-    <title>GT Cast-お見積り 内容確認-</title>
+    <title>GT Cast-お問い合わせ 内容入力-</title>
   </head>
 
   <body class="common-body-mg0">
@@ -70,7 +70,7 @@
               <p class="cta__tell-num">0123-456-7890</p>
             </div>
             <div class="cta__btnbox">
-              <div class="cta__estimate">
+              <div class="cta__contact">
                 <a class="cta__button" href="#">
                   お見積もり
                 </a>
@@ -138,21 +138,21 @@
       </div>
     </div>
 
-    <main id="estimate">
+    <main id="contact">
       <!-- タイトルエリア -->
-      <section class="common-top estimate-top">
-        <span class="common-top__blend estimate-top__blend"></span><!-- /.common-top__blend -->
-        <p class="common-top__title--sub">Estimate</p>
-        <h1 class="common-top__title--main">お見積り</h1>
+      <section class="common-top contact-top">
+        <span class="common-top__blend contact-top__blend"></span><!-- /.common-top__blend -->
+        <p class="common-top__title--sub">Contact</p>
+        <h1 class="common-top__title--main">お問い合わせ</h1>
       </section><!-- /.common-top -->
 
-      <div class="estimate-body__wrap">
+      <div class="contact-body__wrap">
         <!-- パンくずリスト -->
-        <section class="estimate-breadcrumbs">
-          <ol class="estimate-breadcrumb01" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <section class="contact-breadcrumbs">
+          <ol class="contact-breadcrumb01" itemscope itemtype="https://schema.org/BreadcrumbList">
 
             <!-- アイテム Topページリンク -->
-            <li class="estimate-breadcrumb01__item" itemprop="itemListElement" itemscope
+            <li class="contact-breadcrumb01__item" itemprop="itemListElement" itemscope
               itemtype="https://schema.org/ListItem">
               <a itemprop="item" href="/">
                 <span itemprop="name">ホーム</span>
@@ -162,8 +162,8 @@
             <!-- /アイテム Topページリンク -->
 
             <!-- アイテム 親ページリンク -->
-            <!-- <li class="estimate-breadcrumb01__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a itemprop="item" href="/estimate">
+            <!-- <li class="contact-breadcrumb01__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/contact">
             <span itemprop="name">下層ページ1</span>
           </a>
           <meta itemprop="position" content="2" />
@@ -171,70 +171,125 @@
             <!-- アイテム 親ページリンク -->
 
             <!-- アイテム 現在のページ -->
-            <li class="estimate-breadcrumb01__item" itemprop="itemListElement" itemscope
+            <li class="contact-breadcrumb01__item" itemprop="itemListElement" itemscope
               itemtype="https://schema.org/ListItem">
-              <span itemprop="name">お見積り-内容確認</span>
+              <span itemprop="name">お問い合わせ-内容入力</span>
               <meta itemprop="position" content="3" />
             </li>
             <!-- /アイテム 現在のページ -->
 
           </ol>
-        </section><!-- /.estimate-breadcrumbs -->
+        </section><!-- /.contact-breadcrumbs -->
 
         <!-- メインコンテンツ -->
-        <div class="estimate-main">
-          <section class="estimate">
-            <div class="estimate-progress__img">
+        <div class="contact-main">
+          <section class="contact">
+            <div class="contact-progress__img">
               <picture>
-                <source media="(min-width: 769px)" srcset="./images/estimate/estimate_progress_confirm_768up.svg">
-                <source media="(max-width: 768px)" srcset="./images/estimate/estimate_progress_confirm.svg">
-                <img src="./images/estimate/estimate_progress_confirm.svg" alt="内容確認">
-              </picture>
-            </div><!-- /.estimate-content__img -->
-            <h1 class="estimate-content__title">
-              <span>以下の内容で</span><span>送信してよろしいですか？</span>
-            </h1><!-- /.estimate-content__text -->
+                <source media="(min-width: 769px)" srcset="./images/contact/contact_progress_input_768up.svg">
+                <source media="(max-width: 768px)" srcset="./images/contact/contact_progress_input.svg">
+                <img src="./images/contact/contact_progress_input.svg" alt="内容入力">
+            </picture>
+            </div><!-- /.contact-content__img -->
+            <p class="contact-content__text">
+              この文章はダミーです文字の大きさ・量・字 間・行間等を確認するために入れていますこの 文章はダミーです文字の大きさ・量・字間・行 間等を確認するために入れていますこの文章は
+              ダミーです文字の大きさ・量・字間・行間等を 確認するために入れています
+            </p><!-- /.contact-content__text -->
 
-            <div class="estimate-form__confirm">
+            <div class="contact-form">
               <form action="">
-                <div class="form-confirm">
-                  <div class="form-confirm__title">会社名</div><!-- /.form__title -->
-                  <div class="form-confirm__content">株式会社ジーティキャスト</div><!-- /.form__title -->
-                </div><!-- /.form-confirm -->
-                <div class="form-confirm">
-                  <div class="form-confirm__title">氏名</div><!-- /.form__title -->
-                  <div class="form-confirm__content">田中 太郎</div><!-- /.form__title -->
-                </div><!-- /.form-confirm -->
-                <div class="form-confirm">
-                  <div class="form-confirm__title">電話番号</div><!-- /.form__title -->
-                  <div class="form-confirm__content">0123-456-789</div><!-- /.form__title -->
-                </div><!-- /.form-confirm -->
-                <div class="form-confirm">
-                  <div class="form-confirm__title">メールアドレス</div><!-- /.form__title -->
-                  <div class="form-confirm__content">sample@sample.com</div><!-- /.form__title -->
-                </div><!-- /.form-confirm -->
-                <div class="form-confirm">
-                  <div class="form-confirm__title">お見積り項目</div><!-- /.form__title -->
-                  <div class="form-confirm__content">この文章はダミーです</div><!-- /.form__title -->
-                </div><!-- /.form-confirm -->
-                <div class="form-confirm">
-                  <div class="form-confirm__title">お見積り内容</div><!-- /.form__title -->
-                  <div class="form-confirm__content">この文章はダミーですこの文章はダミー ですこの文章はダミーですこの文章はダ ミーですこの文章はダミーですこの文章 はダミーですこの文章はダミーですこの 文章はダミーですこの文章はダミーです この文章はダミーですこの文章はダミー ですこの文章はダミーですこの文章はダ ミーですこの文章はダミーです</div><!-- /.form__title -->
-                </div><!-- /.form-confirm -->
-                <div class="form-btn__confirm-wrap">
-                  <div class="common-btn form-btn__confirm--fow">
-                    <input type="submit" value="送信する">
-                  </div><!-- /.form-btn__confirm--fow -->
-                  <div class="common-btn form-btn__confirm--rev">
-                    <input type="submit" value="戻る">
-                  </div><!-- /.form-btn__confirm--fow -->
-                </div><!-- /.form-btn__confirm-wrap -->
+                <div class="form-content">
+                  <div class="form-content--heading">
+                    <span class="form__badge">必須</span><!-- /.form__badge -->
+                    <span class="form__title">会社名</span><!-- /.form__title -->
+                  </div><!-- /.form-content--heading -->
+                  <div class="form__input">
+                    <input type="text" id="company" name="company" placeholder="株式会社ジーティキャスト">
+                  </div><!-- /.form__input -->
+                </div><!-- /.form-content -->
+                <div class="form-content">
+                  <div class="form-content--heading">
+                    <span class="form__badge">必須</span><!-- /.form__badge -->
+                    <span class="form__title">氏名</span><!-- /.form__title -->
+                  </div><!-- /.form-content--heading -->
+                  <div class="form__input">
+                    <input type="text" id="name" name="name" placeholder="田中 太郎">
+                  </div><!-- /.form__input -->
+                </div><!-- /.form-content -->
+                <div class="form-content">
+                  <div class="form-content--heading">
+                    <span class="form__badge __op5">任意</span><!-- /.form__badge -->
+                    <span class="form__title">電話番号</span><!-- /.form__title -->
+                  </div><!-- /.form-content--heading -->
+                  <div class="form__input">
+                    <input type="tel" id="tel" name="tel" placeholder="01234567890">
+                  </div><!-- /.form__input -->
+                </div><!-- /.form-content -->
+                <div class="form-content">
+                  <div class="form-content--heading">
+                    <span class="form__badge">必須</span><!-- /.form__badge -->
+                    <span class="form__title">メールアドレス</span><!-- /.form__title -->
+                  </div><!-- /.form-content--heading -->
+                  <div class="form__input">
+                    <input type="email" id="email" name="email" placeholder="sample@sample.com">
+                  </div><!-- /.form__input -->
+                </div><!-- /.form-content -->
+                <div class="form-content">
+                  <div class="form-content--heading">
+                    <span class="form__badge">必須</span><!-- /.form__badge -->
+                    <span class="form__title">お問い合わせ項目</span><!-- /.form__title -->
+                  </div><!-- /.form-content--heading -->
+                  <div class="form__input form__input--radio">
+                    <div class="form__radio">
+                      <ul class="form__radio-list">
+                        <li><label>
+                            <input class="u-form--visually-hidden" type="radio" name="item"
+                              value="A"><span>この文章はダミーです</span>
+                          </label></li>
+                        <li><label>
+                            <input class="u-form--visually-hidden" type="radio" name="item"
+                              value="B"><span>この文章はダミーです</span>
+                          </label></li>
+                        <li><label>
+                            <input class="u-form--visually-hidden" type="radio" name="item"
+                              value="C"><span>この文章はダミーです</span>
+                          </label></li>
+                      </ul><!-- /.p-form__radio-list -->
+                    </div><!-- /.p-form__radio -->
+                  </div><!-- /.form__input -->
+                </div><!-- /.contact-form-content -->
+                <div class="form-content">
+                  <div class="form-content--heading">
+                    <span class="form__badge">必須</span><!-- /.form__badge -->
+                    <span class="form__title">お問い合わせ内容</span><!-- /.form__title -->
+                  </div><!-- /.form-content--heading -->
+                  <div class="form__input form__input--textarea">
+                    <textarea id="content01" name="content01" placeholder="入力してください"></textarea>
+                  </div><!-- /.form__input form__input--textarea -->
+                </div><!-- /.form-content -->
+                <div class="form-content">
+                  <ul class="form__check-box-list">
+                    <li><input id="check01" class="u-form--visually-hidden" type="checkbox" name="reason" value="同意する">
+                      <label for="check01">プライバシーポリシーに同意する</label>
+                    </li>
+                  </ul>
+                </div><!-- /.form-content -->
+                <div class="common-btn form-btn">
+                  <input type="submit" value="送信内容を確認する">
+              </div><!-- /.p-form__btn -->
               </form>
-            </div><!-- /.estimate-form__confirm -->
-          </section><!-- /.estimate -->
-        </div><!-- /.estimate-main -->
-      </div><!-- /.estimate-body__wrap -->
-    </main><!-- /#estimate -->
+            </div><!-- /.contact-form -->
+            <div class="contact-reception">
+              <span>受付時間00:00〜00:00</span>
+              <address>0123-456-7890</address>
+            </div><!-- /.contact-reception -->
+
+
+
+          </section><!-- /.contact -->
+        </div><!-- /.contact-main -->
+      </div><!-- /.contact-body__wrap -->
+    </main><!-- /#contact -->
 
     <footer class="footer">
       <div class="footer__nav">
@@ -304,14 +359,14 @@
           </ul>
         </div>
       </div>
-      <div class="footer__estimate">
-        <ul class="footer__estimate-wrap">
-          <li class="footer__estimate-privacypolicy">
+      <div class="footer__contact">
+        <ul class="footer__contact-wrap">
+          <li class="footer__contact-privacypolicy">
             <a src="">
               プライバシーポリシー
             </a>
           </li>
-          <li class="footer__estimate-name">
+          <li class="footer__contact-name">
             <a src="">
               &copy; 2022 GT CAST
             </a>
