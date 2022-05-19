@@ -13,3 +13,21 @@
   height: 250px;
   background: -webkit-image-set(url(../images/recruit/recruit_tv_1000up.jpg) 1x, url(../images/recruit/recruit_tv_1000up@2x.jpg) 2x) center center/cover;
 }
+/* recruit-descセクション */
+.recruit-desc__title{
+  margin-left: calc(50% - 50vw);
+}
+
+/* 採用の流れセクション */
+.recruit-flow{
+  margin-left: calc(50% - 50vw);
+}
+.recruit-flow__contents{
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.recruit-entry__content{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

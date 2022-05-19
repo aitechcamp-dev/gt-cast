@@ -58,179 +58,145 @@
   opacity: 0.7;
 }
 
-/* recruit-メインセクション */
-.recruit{
-  margin-top: 40px;
+/* メインコンテンツ */
+
+/* recruit-descセクション */
+.recruit-desc{
+  margin-top: 60px;
 }
-.recruit > div:nth-child(n + 2){
-  margin-top: 40px;
-}
-.recruit-content__img{
-  width: 100%;
-  height: auto;
-}
-.recruit-content__img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  vertical-align: top;
-}
-/* .recruit-content__imgの上書き */
-.recruit__img--fst img{
+.recruit-desc__title{
+  display: flex;
+  align-items: center;
   width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  height: 444px;
+  margin-left: -16px;
+  background: -webkit-image-set(url(../images/recruit/recruit_mainv.jpg) 1x, url(../images/recruit/recruit_mainv@2x.jpg) 2x) center center/cover;
+  h1{
+    width: 100%;
+    padding: 20px 16px;
+    margin: 0;
+    font-size: unquote('min(6.4vw,24px)');
+    color: $c-primary;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    &::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      opacity: .8;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
 }
-.recruit-content__title{
-  color: $c-primary;
-  font-size: $fz30-36;
-  line-height: 1.2;
-  margin: 20px 0 0;
-  font-weight: 600;
-}
-.recruit-content__text{
-  margin: 20px 0 0;
+.recruit-desc__content{
+  margin-top: 20px;
 }
 
-/* recruit-aboutセクション */
-.recruit-about{
-  margin-top: 80px;
+/* 募集職種セクション */
+.recruit-occupation{
+  margin-top: 120px;
+}
+.recruit-occupation__wrap{
+  margin-top: 30px;
+}
+.recruit-occupation__title,
+.recruit-flow__title{
+font-size: $fz30-40;
+color: $c-primary;
+text-align: center;
+}
+.recruit-occupation__img{
   width: 100%;
-  height: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-}
-.recruit-about__heading{
-  padding-top: 60px;
-  padding-bottom: 60px;
-  width: 100vw;
-  height: 100%;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  background: -webkit-image-set(url(../images/recruit/recruit_bg.jpg) 1x, url(../images/recruit/recruit_bg@2x.jpg) 2x) center center/cover no-repeat;
-}
-.recruit-about__heading-sub{
-  @include inter_m;
-  color: $c-primary;
-  font-size: 16px;
-  margin: 0;
-  z-index: 1;
-}
-.recruit-about__heading-main{
-  font-weight: 600;
-  color: $c-primary; 
-  font-size: unquote('min( 9.6vw, 40px)');
-  line-height: 1.2;
-  position: relative;
-  margin: 0;
-  margin-top: 7px;
-  z-index: 2;
-  &::after{
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 1px;
-    width: 100px;
-    background-color: $c-primary;
-  }
-}
-.recruit-about__heading-txt{
-  margin-top: 40px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-bottom: 0;
-  text-align: left;
-}
-.recruit-def{
-  text-align: left;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-.recruit-def__list{
-  margin-top: 0;
-  &:last-child{
-  border-bottom: 1px solid #000;
-  }
-}
-.recruit-def__term{
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-top: 1px solid #000;
-}
-.recruit-def__desc{
-  margin-left: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  address{
-    font-style: unset;
-  }
-}
-.recruit-map{
-  width: 100%;
-  text-align: right;
-  box-sizing: border-box;
-  iframe{
-    aspect-ratio: 1.225 / 1;
-  }
-  a{
-    font-size: 14px;
-  }
-}
-/* 役員紹介セクション */
-.introduction{
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  border-top: 1px solid $c-primary;
-  border-bottom: 1px solid $c-primary;
-  h2{
-    color: $c-primary;
-    font-size: $fz30-36;
-  }
-}
-.introduction__img{
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  height: auto;
   img{
     width: 100%;
     height: auto;
-    vertical-align: top;
   }
 }
-.introduction__document{
-  text-align: left;
+.recruit-occupation__type-title{
+  margin: 0;
   margin-top: 20px;
-  h3{
-    margin-bottom: 0;
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  h4{
-    margin-bottom: 0;
-    margin-top: 3px;
-    font-size: 24px;
-  }
-  p{
-    margin-bottom: 0;
-    margin-top: 5px;
-  }
-}
-.recruit-link__btn{
-  width: 100%;
-  height: 50px;
-  font-size: 24px;
-  font-weight: bold;
+  margin-left: -16px;
+  font-size: $fz30-36;
   color: $c-primary;
-  background-color: #fff;
-  border: 1px solid $c-primary;
+  line-height: 1;
+}
+.recruit-occupation__type-desc{
+  margin: 0;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.recruit-occupation__type-sub-title{
+  margin: 0;
+  margin-top: 20px;
+  font-size: unquote('min( 4.8vw, 20px)');
+  color: $c-primary;
+  line-height: 1;
+}
+.recruit-occupation__type-txt{
+  margin: 0;
   margin-top: 10px;
+}
+.recruit-occupation > div:last-child{
+  padding-top: 30px;
+  padding-bottom: 110px;
+  border-bottom: 1px solid $c-primary;
+}
+
+/* 採用の流れセクション */
+.recruit-flow{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: -webkit-image-set(url(../images/recruit/recruit_bg.jpg) 1x, url(../images/recruit/recruit_bg@2x.jpg) 2x) center center/cover;
+  width: 100vw;
+  height: auto;
+  margin-left: -16px;
+}
+.recruit-flow__contents{
+  margin-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.recruit-flow__sub-title{
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.recruit-flow__sub-txt{
+  margin: 0;
+  margin-top: 12px;
+}
+.flow-triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 12px 0 12px;
+  border-color: #064646 transparent transparent transparent;
+  margin: 20px auto 0;
+}
+
+/* エントリーセクション */
+.recruit-entry{
+  padding: 60px 16px;
+  text-align: center;
+  border: 1px solid $c-primary;
+}
+.recruit-entry__title{
+  margin: 0;
+  font-size: $fz24-30;
+  color: $c-primary;
+  text-align: center;
+}
+.recruit-entry__content{
+  margin: 0;
+  margin-top: 40px;
+  text-align: left;
+}
+.recruit-entry__btn{
+  margin-top: 60px;
 }

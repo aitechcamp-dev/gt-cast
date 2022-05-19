@@ -7,9 +7,10 @@
 }
 
 .company-body__wrap{
+  box-sizing: border-box;
     padding-right: 16px;
     padding-left: 16px;
-    max-width: 1080PX;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
@@ -173,7 +174,9 @@
   }
 }
 .company-map{
+  max-width: 1080px;
   width: 100%;
+  margin: 0 auto;
   text-align: right;
   box-sizing: border-box;
   iframe{

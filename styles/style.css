@@ -786,9 +786,10 @@ a {
 }
 
 .company-body__wrap {
+  box-sizing: border-box;
   padding-right: 16px;
   padding-left: 16px;
-  max-width: 1080PX;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -976,7 +977,9 @@ a {
 }
 
 .company-map {
+  max-width: 1080px;
   width: 100%;
+  margin: 0 auto;
   text-align: right;
   box-sizing: border-box;
 }
@@ -1395,211 +1398,166 @@ a {
   opacity: 0.7;
 }
 
-/* recruit-メインセクション */
-.recruit {
-  margin-top: 40px;
+/* メインコンテンツ */
+/* recruit-descセクション */
+.recruit-desc {
+  margin-top: 60px;
 }
 
-.recruit > div:nth-child(n + 2) {
-  margin-top: 40px;
-}
-
-.recruit-content__img {
-  width: 100%;
-  height: auto;
-}
-
-.recruit-content__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  vertical-align: top;
-}
-
-/* .recruit-content__imgの上書き */
-.recruit__img--fst img {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-}
-
-.recruit-content__title {
-  color: #03034A;
-  font-size: min( 8vw, 36px);
-  line-height: 1.2;
-  margin: 20px 0 0;
-  font-weight: 600;
-}
-
-.recruit-content__text {
-  margin: 20px 0 0;
-}
-
-/* recruit-aboutセクション */
-.recruit-about {
-  margin-top: 80px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
+.recruit-desc__title {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-}
-
-.recruit-about__heading {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  align-items: center;
   width: 100vw;
-  height: 100%;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  background: -webkit-image-set(url(../images/recruit/recruit_bg.jpg) 1x, url(../images/recruit/recruit_bg@2x.jpg) 2x) center center/cover no-repeat;
+  height: 444px;
+  margin-left: -16px;
+  background: -webkit-image-set(url(../images/recruit/recruit_mainv.jpg) 1x, url(../images/recruit/recruit_mainv@2x.jpg) 2x) center center/cover;
 }
 
-.recruit-about__heading-sub {
-  font-family: 'Inter', sans-serif;
-  font-variation-settings: "slnt" -10 ,"wght" 400;
-  color: #03034A;
-  font-size: 16px;
+.recruit-desc__title h1 {
+  width: 100%;
+  padding: 20px 16px;
   margin: 0;
+  font-size: min(6.4vw,24px);
+  color: #03034A;
+  text-align: center;
+  position: relative;
   z-index: 1;
 }
 
-.recruit-about__heading-main {
-  font-weight: 600;
-  color: #03034A;
-  font-size: min( 9.6vw, 40px);
-  line-height: 1.2;
-  position: relative;
-  margin: 0;
-  margin-top: 7px;
-  z-index: 2;
-}
-
-.recruit-about__heading-main::after {
+.recruit-desc__title h1::before {
   content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 1px;
-  width: 100px;
-  background-color: #03034A;
-}
-
-.recruit-about__heading-txt {
-  margin-top: 40px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-bottom: 0;
-  text-align: left;
-}
-
-.recruit-def {
-  text-align: left;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.recruit-def__list {
-  margin-top: 0;
-}
-
-.recruit-def__list:last-child {
-  border-bottom: 1px solid #000;
-}
-
-.recruit-def__term {
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-top: 1px solid #000;
-}
-
-.recruit-def__desc {
-  margin-left: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-}
-
-.recruit-def__desc address {
-  font-style: unset;
-}
-
-.recruit-map {
   width: 100%;
-  text-align: right;
-  box-sizing: border-box;
+  height: 100%;
+  background-color: #fff;
+  opacity: .8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-.recruit-map iframe {
-  aspect-ratio: 1.225 / 1;
+.recruit-desc__content {
+  margin-top: 20px;
 }
 
-.recruit-map a {
-  font-size: 14px;
+/* 募集職種セクション */
+.recruit-occupation {
+  margin-top: 120px;
 }
 
-/* 役員紹介セクション */
-.introduction {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  border-top: 1px solid #03034A;
+.recruit-occupation__wrap {
+  margin-top: 30px;
+}
+
+.recruit-occupation__title,
+.recruit-flow__title {
+  font-size: min( 8vw, 40px);
+  color: #03034A;
+  text-align: center;
+}
+
+.recruit-occupation__img {
+  width: 100%;
+  height: auto;
+}
+
+.recruit-occupation__img img {
+  width: 100%;
+  height: auto;
+}
+
+.recruit-occupation__type-title {
+  margin: 0;
+  margin-top: 20px;
+  margin-left: -16px;
+  font-size: min( 8vw, 36px);
+  color: #03034A;
+  line-height: 1;
+}
+
+.recruit-occupation__type-desc {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.recruit-occupation__type-sub-title {
+  margin: 0;
+  margin-top: 20px;
+  font-size: min( 4.8vw, 20px);
+  color: #03034A;
+  line-height: 1;
+}
+
+.recruit-occupation__type-txt {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.recruit-occupation > div:last-child {
+  padding-top: 30px;
+  padding-bottom: 110px;
   border-bottom: 1px solid #03034A;
 }
 
-.introduction h2 {
-  color: #03034A;
-  font-size: min( 8vw, 36px);
-}
-
-.introduction__img {
+/* 採用の流れセクション */
+.recruit-flow {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: -webkit-image-set(url(../images/recruit/recruit_bg.jpg) 1x, url(../images/recruit/recruit_bg@2x.jpg) 2x) center center/cover;
   width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-}
-
-.introduction__img img {
-  width: 100%;
   height: auto;
-  vertical-align: top;
+  margin-left: -16px;
 }
 
-.introduction__document {
-  text-align: left;
+.recruit-flow__contents {
   margin-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-.introduction__document h3 {
-  margin-bottom: 0;
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-.introduction__document h4 {
-  margin-bottom: 0;
-  margin-top: 3px;
-  font-size: 24px;
-}
-
-.introduction__document p {
-  margin-bottom: 0;
-  margin-top: 5px;
-}
-
-.recruit-link__btn {
-  width: 100%;
-  height: 50px;
-  font-size: 24px;
+.recruit-flow__sub-title {
+  margin: 0;
+  font-size: 18px;
   font-weight: bold;
-  color: #03034A;
-  background-color: #fff;
+}
+
+.recruit-flow__sub-txt {
+  margin: 0;
+  margin-top: 12px;
+}
+
+.flow-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 12px 0 12px;
+  border-color: #064646 transparent transparent transparent;
+  margin: 20px auto 0;
+}
+
+/* エントリーセクション */
+.recruit-entry {
+  padding: 60px 16px;
+  text-align: center;
   border: 1px solid #03034A;
-  margin-top: 10px;
+}
+
+.recruit-entry__title {
+  margin: 0;
+  font-size: min( 6.4vw, 30px);
+  color: #03034A;
+  text-align: center;
+}
+
+.recruit-entry__content {
+  margin: 0;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.recruit-entry__btn {
+  margin-top: 60px;
 }
 
 .mainvisual {
@@ -1887,16 +1845,17 @@ a {
     flex-direction: row-reverse;
   }
   /* .company-content__imgの上書き */
-  .company__img--fst {
-    margin-left: -16px;
+  .company-content__img {
+    max-width: min( 47.4vw, 512px);
   }
   .company__img--fst img {
     width: calc(100% + 16px);
-    height: 460px;
     margin-left: 0;
     margin-right: 0;
   }
   .company-about {
+    width: calc(100vw - 8px);
+    margin-left: calc(50% - 50vw);
     background: -webkit-image-set(url(../images/company/company_bg.jpg) 1x, url(../images/company/company_bg@2x.jpg) 2x) center center/cover no-repeat;
   }
   .company-about__heading {
@@ -1911,6 +1870,10 @@ a {
     max-width: 780px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .company-def {
+    max-width: 1080px;
+    margin: 0 auto;
   }
   .company-def__term {
     float: left;
@@ -2047,140 +2010,64 @@ a {
     font-size: 36px;
   }
   /* recruit 768up */
-  .recruit {
-    margin-top: 24px;
+  /* メインコンテンツ */
+  /* recruit-descセクション */
+  .recruit-desc__title {
+    height: 609px;
+    background: -webkit-image-set(url(../images/recruit/recruit_mainv_1000up.jpg) 1x, url(../images/recruit/recruit_mainv_1000up@2x.jpg) 2x) center center/cover;
   }
-  .recruit > div:nth-child(2) {
-    margin-top: 90px;
+  .recruit-desc__title h1 {
+    padding: 26px 16px;
+    font-size: min(3.33vw,36px);
   }
-  .recruit-content {
+  /* 募集職種セクション */
+  .recruit-occupation {
+    margin-top: 160px;
+  }
+  .recruit-occupation__wrap {
+    margin-top: 80px;
     display: flex;
-    gap: min( 4.63vw, 50px);
   }
-  .recruit-content__img {
-    width: min( 54%, 580px);
+  .recruit-occupation__img {
+    width: min( 36.11vw, 390px);
+    height: min( 36.11vw, 390px);
     flex-shrink: 0;
   }
-  .recruit > div:nth-of-type(odd) {
-    flex-direction: row-reverse;
+  .recruit-occupation__contents {
+    margin-left: 40px;
   }
-  /* .recruit-content__imgの上書き */
-  .recruit__img--fst {
-    margin-left: -16px;
+  .recruit-occupation__type-title {
+    margin-top: 0;
+    font-size: min( 3.33vw, 36px);
   }
-  .recruit__img--fst img {
-    width: calc(100% + 16px);
-    height: 460px;
-    margin-left: 0;
-    margin-right: 0;
+  .recruit-occupation__type-sub {
+    display: flex;
+    margin-top: 40px;
   }
-  .recruit-about {
-    background: -webkit-image-set(url(../images/recruit/recruit_bg.jpg) 1x, url(../images/recruit/recruit_bg@2x.jpg) 2x) center center/cover no-repeat;
+  .recruit-occupation__type-sub-title {
+    width: 80px;
+    flex-shrink: 0;
+    margin-top: 0;
   }
-  .recruit-about__heading {
-    padding-top: 120px;
-    width: 100%;
-    height: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    background: none;
+  .recruit-occupation__type-txt {
+    margin-left: 40px;
+    margin-top: 0;
   }
-  .recruit-about__heading-txt {
-    max-width: 780px;
-    margin-left: auto;
-    margin-right: auto;
+  /* 採用の流れセクション */
+  .recruit-flow {
+    background: -webkit-image-set(url(../images/recruit/recruit_bg_1000up.jpg) 1x, url(../images/recruit/recruit_bg_1000up@2x.jpg) 2x) center center/cover;
   }
-  .recruit-def__term {
-    float: left;
-    padding-bottom: 20px;
-    border-top: none;
-  }
-  .recruit-def__desc {
-    margin-left: 0;
-    padding-left: 200px;
-    padding-top: 20px;
-    border-top: 1px solid #000;
-  }
-  .recruit-def__desc address {
-    display: inline;
-  }
-  .recruit-map {
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-top: 50px;
-    margin-bottom: calc(100% / 3 / 2 * -1);
-  }
-  .recruit-map iframe {
-    aspect-ratio: 3 / 1;
-  }
-  .introduction {
-    padding-top: 120px;
-    padding-bottom: 80px;
-    margin-top: calc(100% / 3 / 2 + 96px);
-    margin-bottom: 60px;
-    border-top: 1px solid #03034A;
-    border-bottom: 1px solid #03034A;
-  }
-  .introduction h2 {
-    text-align: center;
-  }
-  .introduction__wrap {
+  .recruit-flow__contents {
     display: flex;
     justify-content: center;
-    gap: min(4.62vw, 50px);
   }
-  .introduction__wrap--fst {
-    gap: min(2.78vw,30px);
-    align-items: center;
-  }
-  .introduction__img {
-    width: min( 49.72vw, 537px);
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .introduction__img img {
-    width: 100%;
-    height: auto;
-    vertical-align: top;
-  }
-  .introduction__document {
-    width: min(27.77vw,300px);
-    margin-top: 0;
-  }
-  .introduction__document h3 {
-    margin-bottom: 0;
-    margin-top: 20px;
+  .recruit-flow__sub-title {
     font-size: 20px;
+    width: 200px;
+    flex-shrink: 0;
   }
-  .introduction__document h4 {
-    margin-bottom: 0;
-    margin-top: 3px;
-    font-size: 24px;
-  }
-  .introduction__document p {
-    margin-bottom: 0;
-    margin-top: 5px;
-  }
-  .introduction__document--fst {
-    width: min(31.48vw,340px);
-  }
-  .introduction__document--fst h3 {
-    margin-top: 0;
-  }
-  .recruit-link {
-    display: flex;
-    gap: min(2.78vw,30px);
-    padding-bottom: 40px;
-  }
-  .recruit-link__btn {
-    width: min(31.48vw,340px);
-    height: 50px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #03034A;
-    background-color: #fff;
-    border: 1px solid #03034A;
-    margin-top: 10px;
+  .recruit-flow__sub-txt {
+    margin: 0;
   }
 }
 
@@ -2276,6 +2163,9 @@ a {
     height: 250px;
     background: -webkit-image-set(url(../images/company/company_tv_1000up.jpg) 1x, url(../images/company/company_tv_1000up@2x.jpg) 2x) center center/cover;
   }
+  .company__img--fst img {
+    width: calc(100% + 32px);
+  }
   /* estimate 1000up */
   .estimate-body__wrap {
     padding-right: 32px;
@@ -2351,6 +2241,34 @@ a {
   .infoslider__box {
     align-items: center;
     height: 100%;
+  }
+  /* recruit 1000up */
+  .recruit-body__wrap {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  /* recruit-トップタイトル */
+  .recruit-top {
+    width: 100%;
+    height: 250px;
+    background: -webkit-image-set(url(../images/recruit/recruit_tv_1000up.jpg) 1x, url(../images/recruit/recruit_tv_1000up@2x.jpg) 2x) center center/cover;
+  }
+  /* recruit-descセクション */
+  .recruit-desc__title {
+    margin-left: calc(50% - 50vw);
+  }
+  /* 採用の流れセクション */
+  .recruit-flow {
+    margin-left: calc(50% - 50vw);
+  }
+  .recruit-flow__contents {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .recruit-entry__content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
