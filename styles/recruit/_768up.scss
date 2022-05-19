@@ -1,0 +1,65 @@
+@import "../common/system";
+
+/* recruit 768up */
+
+/* メインコンテンツ */
+
+/* recruit-descセクション */
+.recruit-desc__title{
+  height: 609px;
+  background: -webkit-image-set(url(../images/recruit/recruit_mainv_1000up.jpg) 1x, url(../images/recruit/recruit_mainv_1000up@2x.jpg) 2x) center center/cover;
+  h1{
+    padding: 26px 16px;
+    font-size: unquote('min(3.33vw,36px)');
+  }
+}
+/* 募集職種セクション */
+.recruit-occupation{
+  margin-top: 160px;
+}
+.recruit-occupation__wrap{
+  margin-top: 80px;
+  display: flex;
+}
+.recruit-occupation__img{
+  width: unquote('min( 36.11vw, 390px)');
+  height: unquote('min( 36.11vw, 390px)');
+  flex-shrink: 0;
+}
+.recruit-occupation__contents{
+  margin-left: 40px;
+}
+.recruit-occupation__type-title{
+  margin-top: 0;
+  font-size: unquote('min( 3.33vw, 36px)');
+}
+.recruit-occupation__type-sub{
+  display: flex;
+  margin-top: 40px;
+}
+.recruit-occupation__type-sub-title{
+  width: 80px;
+  flex-shrink: 0;
+  margin-top: 0;
+}
+.recruit-occupation__type-txt{
+  margin-left: 40px;
+  margin-top: 0;
+}
+
+/* 採用の流れセクション */
+.recruit-flow{
+  background: -webkit-image-set(url(../images/recruit/recruit_bg_1000up.jpg) 1x, url(../images/recruit/recruit_bg_1000up@2x.jpg) 2x) center center/cover;
+}
+.recruit-flow__contents{
+  display: flex;
+  justify-content: center;
+}
+.recruit-flow__sub-title{
+  font-size: 20px;
+  width: 200px;
+  flex-shrink: 0;
+}
+.recruit-flow__sub-txt{
+  margin: 0;
+}

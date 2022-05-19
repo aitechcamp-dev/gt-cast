@@ -1,0 +1,202 @@
+@import "../common/system";
+
+/* recruit ページ */
+
+#recruit{
+  width: 100%;
+}
+
+.recruit-body__wrap{
+    padding-right: 16px;
+    padding-left: 16px;
+    max-width: 1080PX;
+    margin: 0 auto;
+}
+
+/* recruit-トップタイトル */
+.recruit-top{
+  width: 100%;
+  height: 236px;
+  background: -webkit-image-set(url(../images/recruit/recruit_tv.jpg) 1x, url(../images/recruit/recruit_tv@2x.jpg) 2x) center center/cover;
+}
+
+/* recruit-パンくずリスト */
+.recruit-breadcrumbs{
+  font-size: 16px;
+  color: $c-primary;
+  ol{
+    padding-left: 0;
+  }
+}
+.recruit-breadcrumb01__item {
+  display: inline;
+  position: relative;
+  line-height: 1.5;
+  color: $c-primary;
+  // font-weight: bold;
+}
+.recruit-breadcrumb01__item:not(:first-child) {
+  margin-left: 24px;
+}
+.recruit-breadcrumb01__item:not(:last-child):after {
+  position: absolute;
+  content: "\f054";
+  top: 50%;
+  right: -16px;
+  transform: translateY(-50%);
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: $c-primary;
+}
+.recruit-breadcrumb01__item a {
+  transition: .2s ease-in-out;
+  color: $c-primary;
+  text-decoration: none;
+  font-weight: normal;
+}
+.recruit-breadcrumb01__item a:hover {
+  opacity: 0.7;
+}
+
+/* メインコンテンツ */
+
+/* recruit-descセクション */
+.recruit-desc{
+  margin-top: 60px;
+}
+.recruit-desc__title{
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 444px;
+  margin-left: -16px;
+  background: -webkit-image-set(url(../images/recruit/recruit_mainv.jpg) 1x, url(../images/recruit/recruit_mainv@2x.jpg) 2x) center center/cover;
+  h1{
+    width: 100%;
+    padding: 20px 16px;
+    margin: 0;
+    font-size: unquote('min(6.4vw,24px)');
+    color: $c-primary;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    &::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      opacity: .8;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
+.recruit-desc__content{
+  margin-top: 20px;
+}
+
+/* 募集職種セクション */
+.recruit-occupation{
+  margin-top: 120px;
+}
+.recruit-occupation__wrap{
+  margin-top: 30px;
+}
+.recruit-occupation__title,
+.recruit-flow__title{
+font-size: $fz30-40;
+color: $c-primary;
+text-align: center;
+}
+.recruit-occupation__img{
+  width: 100%;
+  height: auto;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.recruit-occupation__type-title{
+  margin: 0;
+  margin-top: 20px;
+  margin-left: -16px;
+  font-size: $fz30-36;
+  color: $c-primary;
+  line-height: 1;
+}
+.recruit-occupation__type-desc{
+  margin: 0;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.recruit-occupation__type-sub-title{
+  margin: 0;
+  margin-top: 20px;
+  font-size: unquote('min( 4.8vw, 20px)');
+  color: $c-primary;
+  line-height: 1;
+}
+.recruit-occupation__type-txt{
+  margin: 0;
+  margin-top: 10px;
+}
+.recruit-occupation > div:last-child{
+  padding-top: 30px;
+  padding-bottom: 110px;
+  border-bottom: 1px solid $c-primary;
+}
+
+/* 採用の流れセクション */
+.recruit-flow{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: -webkit-image-set(url(../images/recruit/recruit_bg.jpg) 1x, url(../images/recruit/recruit_bg@2x.jpg) 2x) center center/cover;
+  width: 100vw;
+  height: auto;
+  margin-left: -16px;
+}
+.recruit-flow__contents{
+  margin-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.recruit-flow__sub-title{
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.recruit-flow__sub-txt{
+  margin: 0;
+  margin-top: 12px;
+}
+.flow-triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 12px 0 12px;
+  border-color: #064646 transparent transparent transparent;
+  margin: 20px auto 0;
+}
+
+/* エントリーセクション */
+.recruit-entry{
+  padding: 60px 16px;
+  text-align: center;
+  border: 1px solid $c-primary;
+}
+.recruit-entry__title{
+  margin: 0;
+  font-size: $fz24-30;
+  color: $c-primary;
+  text-align: center;
+}
+.recruit-entry__content{
+  margin: 0;
+  margin-top: 40px;
+  text-align: left;
+}
+.recruit-entry__btn{
+  margin-top: 60px;
+}
