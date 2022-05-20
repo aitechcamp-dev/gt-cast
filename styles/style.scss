@@ -17,6 +17,8 @@
 @import "top/mainvisual/base"; //宇都宮追加
 @import "top/infoslider/base";
 @import "top/selectreason/base";
+@import "entry/base";//岩尾追加
+
 
 
 @media (min-width: 600px) {
@@ -24,6 +26,7 @@
   @import "header/600up";
   @import "estimate/600up";//岩尾追加
   @import "contact/600up";//岩尾追加
+  @import "entry/600up";//岩尾追加
 }
 @media (min-width: 768px) {
   @import "common/768up";//岩尾追加
@@ -32,6 +35,7 @@
   @import "estimate/768up";//岩尾追加
   @import "contact/768up";//岩尾追加
   @import "recruit/768up";//岩尾追加
+  @import "entry/768up";//岩尾追加
 }
 
 @media (min-width: 1000px) {
@@ -44,6 +48,7 @@
   @import "top/mainvisual/1000up"; //宇都宮追加
   @import "top/infoslider/1000up";
   @import "recruit/1000up";//岩尾追加
+  @import "entry/1000up";//岩尾追加
 }
 @media (min-width: 1100px) {
   @import "header/1100up";
