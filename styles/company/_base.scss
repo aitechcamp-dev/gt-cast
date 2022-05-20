@@ -194,9 +194,10 @@
   margin-bottom: 60px;
   border-top: 1px solid $c-primary;
   border-bottom: 1px solid $c-primary;
-  h2{
+  h3{
     color: $c-primary;
     font-size: $fz30-36;
+    text-align: center;
   }
 }
 .introduction__img{
@@ -212,12 +213,12 @@
 .introduction__document{
   text-align: left;
   margin-top: 20px;
-  h3{
+  h4{
     margin-bottom: 0;
     margin-top: 20px;
     font-size: 20px;
   }
-  h4{
+  h5{
     margin-bottom: 0;
     margin-top: 3px;
     font-size: 24px;

@@ -1002,9 +1002,10 @@ a {
   border-bottom: 1px solid #03034A;
 }
 
-.introduction h2 {
+.introduction h3 {
   color: #03034A;
   font-size: min( 8vw, 36px);
+  text-align: center;
 }
 
 .introduction__img {
@@ -1024,13 +1025,13 @@ a {
   margin-top: 20px;
 }
 
-.introduction__document h3 {
+.introduction__document h4 {
   margin-bottom: 0;
   margin-top: 20px;
   font-size: 20px;
 }
 
-.introduction__document h4 {
+.introduction__document h5 {
   margin-bottom: 0;
   margin-top: 3px;
   font-size: 24px;
@@ -1413,7 +1414,7 @@ a {
   background: -webkit-image-set(url(../images/recruit/recruit_mainv.jpg) 1x, url(../images/recruit/recruit_mainv@2x.jpg) 2x) center center/cover;
 }
 
-.recruit-desc__title h1 {
+.recruit-desc__title h3 {
   width: 100%;
   padding: 20px 16px;
   margin: 0;
@@ -1424,7 +1425,7 @@ a {
   z-index: 1;
 }
 
-.recruit-desc__title h1::before {
+.recruit-desc__title h3::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -2278,6 +2279,9 @@ a {
     gap: min(2.78vw,30px);
     align-items: center;
   }
+  .introduction__wrap--snd {
+    margin-top: 55px;
+  }
   .introduction__img {
     width: min( 49.72vw, 537px);
     margin-left: 0;
@@ -2376,7 +2380,7 @@ a {
     height: 609px;
     background: -webkit-image-set(url(../images/recruit/recruit_mainv_1000up.jpg) 1x, url(../images/recruit/recruit_mainv_1000up@2x.jpg) 2x) center center/cover;
   }
-  .recruit-desc__title h1 {
+  .recruit-desc__title h3 {
     padding: 26px 16px;
     font-size: min(3.33vw,36px);
   }
