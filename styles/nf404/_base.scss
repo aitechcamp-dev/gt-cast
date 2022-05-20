@@ -1,0 +1,99 @@
+@import "../common/system";
+
+/* 404 ページ */
+
+#nf404{
+  width: 100%;
+}
+
+.nf404-body__wrap{
+    padding-right: 16px;
+    padding-left: 16px;
+    max-width: 1080PX;
+    margin: 0 auto;
+}
+
+/* nf404-トップタイトル */
+.nf404-top{
+  width: 100%;
+  height: 236px;
+  background: -webkit-image-set(url(../images/nf404/nf404_tv.jpg) 1x, url(../images/nf404/nf404_tv@2x.jpg) 2x) top center/cover;
+}
+
+/* nf404-パンくずリスト */
+.nf404-breadcrumbs{
+  font-size: 16px;
+  color: $c-primary;
+  ol{
+    padding-left: 0;
+  }
+}
+.nf404-breadcrumb01__item {
+  display: inline;
+  position: relative;
+  line-height: 1.5;
+  color: $c-primary;
+  // font-weight: bold;
+}
+.nf404-breadcrumb01__item:not(:first-child) {
+  margin-left: 24px;
+}
+.nf404-breadcrumb01__item:not(:last-child):after {
+  position: absolute;
+  content: "\f054";
+  top: 50%;
+  right: -16px;
+  transform: translateY(-50%);
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: $c-primary;
+}
+.nf404-breadcrumb01__item a {
+  transition: .2s ease-in-out;
+  color: $c-primary;
+  text-decoration: none;
+  font-weight: normal;
+}
+.nf404-breadcrumb01__item a:hover {
+  opacity: 0.7;
+}
+
+/* nf404-メインセクション */
+.nf404-main{
+  text-align: center;
+  margin-bottom: 120px;
+}
+.nf404__main-title{
+  font-size: 120px;
+  @include inter_b-0;
+  color: #DD9900;
+  line-height: 1;
+  margin: 0;
+  margin-top: 80px;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 100px;
+    background-color: #DD9900;
+  }
+}
+.nf404__txt{
+  margin-top: 70px;
+  letter-spacing: -1px;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #646464;
+  }
+}
+

@@ -19,6 +19,7 @@
 @import "top/selectreason/base";
 @import "entry/base";//岩尾追加
 @import "privacy/base";//岩尾追加
+@import "nf404/base";//岩尾追加
 
 
 
@@ -51,6 +52,7 @@
   @import "recruit/1000up";//岩尾追加
   @import "entry/1000up";//岩尾追加
   @import "privacy/1000up";//岩尾追加
+  @import "nf404/1000up";//岩尾追加
 }
 @media (min-width: 1100px) {
   @import "header/1100up";

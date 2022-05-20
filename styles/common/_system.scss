@@ -15,6 +15,10 @@ $c-primary: #03034A;
     font-family: 'Inter', sans-serif;
     font-variation-settings: "slnt" -10 ,"wght" 600;
 }
+@mixin inter_b-0 {
+    font-family: 'Inter', sans-serif;
+    font-variation-settings: "slnt" 0 ,"wght" 600;
+}
 
 // フォントサイズ
 $fz24-30: unquote('min( 6.4vw, 30px)'); 
