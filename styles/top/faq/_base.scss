@@ -1,0 +1,137 @@
+.topfaq{
+  position: relative;
+
+  &__wrap {
+    @extend .container__width;
+    padding-top: 80px;
+    position:relative;
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 0px;
+    color: var(--color_titlebase);
+    position: relative;
+
+    &-sub {
+      @include inter_db;
+      font-size: 16px;
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    &-main {
+      font-size: 32px;
+      font-weight: normal;
+      margin: 0;
+      line-height: 45px;
+    }
+
+    &::after {
+      content: "";
+      width: 100px;
+      height: 1px;
+      display: block;
+      background-color: var(--color_titlebase);
+
+      transform: translateX(-50%);
+      position: relative;
+      left: 50%;
+      margin-top: 10px;
+    }
+  }
+
+
+  &__accordion {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  &__option {
+    position: relative;
+    margin-bottom: 1em;
+  }
+
+  &__head{
+    display: flex;
+    align-items: center;
+    background-color: var(--color_titlebase);
+    color:#FFF;
+    padding: 15px 20px;
+    text-align: center;
+    // height:100%
+  }
+  &__titletxt{
+     display: block;
+     padding: 1em;
+     padding-right: 30px;
+     
+  }
+
+  &__actitle,
+  &__content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: all 0.3s;
+  }
+
+  &__actitle {
+    border: solid 1px #ccc;
+    // padding: 1em;
+    display: flex;
+    // align-items: center;
+    color: #000;
+    font-weight: bold;
+    background-color: #CECED8;
+  }
+
+  &__actitle::after,
+  &__actitle::before {
+    content: "";
+    position: absolute;
+    right: 1.25em;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 1em;
+    background-color: #000;
+    transition: all 0.3s;
+  }
+
+  &__actitle::after {
+    transform: translateY(-50%) 
+    rotate(90deg);
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  &__content p {
+    margin: 0;
+    padding: 0.5em 1em 1em 70px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .toggle:checked+&__actitle+&__content {
+    max-height: 500px;
+    transition: all 1.5s;
+  }
+
+  .toggle:checked+&__actitle::before {
+    transform: translateY(-50%) rotate(90deg) !important;
+  }
+    &__totop {
+      position: relative;
+      // display: block;
+      left:calc(100% - 60px);
+
+    }
+}

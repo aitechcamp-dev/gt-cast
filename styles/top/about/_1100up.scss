@@ -1,0 +1,59 @@
+.topabout {
+  &__wrap {
+    display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top:105px;
+    padding-bottom:50px;
+  }
+
+  background-image: url("/gt-cast/images/top/about/about_bg.png");
+  background-size:cover ;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #FFF;
+    opacity: 0.8;
+  }
+
+  &__leftbox {
+    &::before {
+      content: none;
+    }
+  }
+
+  &__leftbox {
+    width: 40%;
+    margin: auto;
+    background: none;
+
+  }
+
+  &__right {
+    width: 60%;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__lefttitle {
+    &-br {
+      display: block;
+    }
+
+  }
+  &__rightbox{
+    margin:0 ;
+    margin-bottom:5px;
+    &-imgbox{
+      object-fit: contain;
+    }
+    &-txtbox{
+      background-color: #FFF;
+    }
+  }
+
+}

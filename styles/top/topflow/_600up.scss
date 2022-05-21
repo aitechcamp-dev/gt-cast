@@ -1,0 +1,38 @@
+.topflow {
+
+
+  &__contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__title{
+    background-image: none;
+  }
+
+  &__box {
+    max-width: 250px;
+
+    &-imgbox {
+      &>img {
+        width: 210px;
+        height: 210px;
+      }
+    }
+
+    &-cta {
+      padding-top: 36px;
+      & img{
+        object-position: 90%;
+      }
+    }
+    &-ctatxt{
+      margin-top:15px;
+    }
+  }
+  &__btn{
+    padding: 10px 0;
+    width: 210px;
+  }
+  
+}

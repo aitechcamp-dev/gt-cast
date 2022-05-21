@@ -61,7 +61,8 @@
   &__textlayer {
     &-left {
       display: block;
-      width: 420px;
+      width: 100%;
+      max-width: 420px;
     }
 
     &-right {

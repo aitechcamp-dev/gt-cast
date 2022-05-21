@@ -1,7 +1,7 @@
 @import 'modules/menubtn';
-@import 'modules/common-btn';//岩尾追加
+@import 'modules/common-btn'; //岩尾追加
 
-@import "common/system";//岩尾追加
+@import "common/system"; //岩尾追加
 @import "common/base";
 
 
@@ -20,16 +20,33 @@
 @import "entry/base";//岩尾追加
 @import "privacy/base";//岩尾追加
 @import "nf404/base";//岩尾追加
+@import "top/about/base";
+@import "top/invite/base";
+@import "top/column/base";
+@import "top/topflow/base";
+@import "top/faq/base";
+
+
+
+
+
+
+
 
 
 
 @media (min-width: 600px) {
-  @import "common/600up";//岩尾追加
+  @import "common/600up"; //岩尾追加
   @import "header/600up";
   @import "estimate/600up";//岩尾追加
   @import "contact/600up";//岩尾追加
   @import "entry/600up";//岩尾追加
+  @import "top/selectreason/600up";
+  @import "top/about/600up";
+  @import "top/topflow/600up";
+
 }
+
 @media (min-width: 768px) {
   @import "common/768up";//岩尾追加
   @import "about/768up";//岩尾追加
@@ -38,22 +55,30 @@
   @import "contact/768up";//岩尾追加
   @import "recruit/768up";//岩尾追加
   @import "entry/768up";//岩尾追加
+  @import "top/selectreason/768up";
+  @import "top/invite/768up";
+  @import "top/column/768up";
 }
 
 @media (min-width: 1000px) {
   @import "header/1000up";
   @import "spnav/1000up";
-  @import "about/1000up";//岩尾追加
-  @import "company/1000up";//岩尾追加
-  @import "estimate/1000up";//岩尾追加
-  @import "contact/1000up";//岩尾追加
+  @import "about/1000up"; //岩尾追加
+  @import "company/1000up"; //岩尾追加
+  @import "estimate/1000up"; //岩尾追加
+  @import "contact/1000up"; //岩尾追加
   @import "top/mainvisual/1000up"; //宇都宮追加
   @import "top/infoslider/1000up";
   @import "recruit/1000up";//岩尾追加
   @import "entry/1000up";//岩尾追加
   @import "privacy/1000up";//岩尾追加
   @import "nf404/1000up";//岩尾追加
+  @import "top/selectreason/1000up";
+
 }
+
 @media (min-width: 1100px) {
   @import "header/1100up";
+    @import "top/about/1100up";
+  @import "top/topflow/1100up";
 }

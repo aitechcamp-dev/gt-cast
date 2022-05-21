@@ -1,0 +1,21 @@
+.column {
+  &__contents{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__box{
+    width:350px;
+  }
+
+  &__subtext {
+    margin-bottom: 60px;
+
+  }
+
+  &__wrap {
+    padding-top: 120px;
+  }
+  &__pc{
+    display: block;
+  }
+}

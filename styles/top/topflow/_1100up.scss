@@ -1,0 +1,17 @@
+.topflow {
+  background-image: url(/gt-cast/images/top/topflow/img__bg.jpeg);
+  background-size: cover;
+    position:relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #FFF;
+      opacity: 0.8;
+      width: 100%;
+      height: calc(100% - 160px);
+      top: 160px;
+      left: 0;
+      z-index: 0;
+    }
+}
