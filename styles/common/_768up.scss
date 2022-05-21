@@ -15,12 +15,19 @@
   align-items: center;
   margin-top: -18px;
 }
+.common-cta__title{
+  white-space: nowrap;
+}
 .common-cta__tell{
   margin-top: 41px;
   height: 55px;
 }
+.common-cta__tell-num{
+  font-size: 25px;
+  white-space: nowrap;
+}
 .common-cta__btnbox{
-  display: inline-block;
+  display: flex;
   margin-left: 50px;
   div:nth-child(2){
     margin-left: 10px;
