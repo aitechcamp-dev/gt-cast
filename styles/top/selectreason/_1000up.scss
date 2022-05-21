@@ -1,0 +1,12 @@
+.selectreason {
+  &__contents{
+    display: flex;
+  }
+  &__contentbox{
+    max-width: 350px;
+    &:nth-child(2){
+      margin-left:3%;
+      margin-right:3%;
+    }
+  }
+}

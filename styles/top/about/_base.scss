@@ -1,0 +1,112 @@
+.topabout {
+  position: relative;
+
+  &__leftbox {
+
+    background-image: url("/gt-cast/images/top/about/about_bg.png");
+    background-size: cover;
+    background-position: 20% 0;
+    padding: 45px 4%;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: #FFF;
+      opacity: 0.8;
+    }
+  }
+
+  &__lefttitle {
+
+    text-align: center;
+
+    color: var(--color_titlebase);
+    position: relative;
+
+    &-sub {
+      @include inter_db;
+      font-size: 16px;
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    &-main {
+      font-size: 32px;
+      font-weight: normal;
+      margin: 0;
+      line-height: 45px;
+    }
+
+    &::after {
+      content: "";
+      width: 100px;
+      height: 1px;
+      display: block;
+      background-color: var(--color_titlebase);
+
+      transform: translateX(-50%);
+      position: relative;
+      left: 50%;
+      margin-top: 10px;
+    }
+
+    &-br {
+      display: block;
+    }
+  }
+
+  &__leftbtn {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    width: 240px;
+    background-color: #000;
+    color: #FFF;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__leftsubtext {
+    font-size: 16px;
+    color: var(--color_base);
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+  }
+
+  &__rightbox {
+    @extend .container__width;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    &-imgbox {
+      // width: 100%;
+      margin: 0px;
+
+      &>img {
+        width: 100%;
+        object-fit: cover;
+
+      }
+    }
+
+    &-title {
+      font-size: 24px;
+      color: var(--background-filcolor);
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    &-txt {
+      margin-top: 0;
+    }
+  }
+}

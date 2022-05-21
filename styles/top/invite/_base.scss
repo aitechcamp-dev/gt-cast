@@ -1,0 +1,132 @@
+.invite {
+  position: relative;
+
+  &::before {
+    content: '';
+    background-image: url(/gt-cast/images/top/invite/invite__bg.png);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    top: -40px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+  }
+
+  &__wrap {
+    @extend .container__width;
+    padding-top: 30px;
+  }
+
+  &__title {
+    text-align: center;
+
+    color: var(--color_titlebase);
+    position: relative;
+
+    &-sub {
+      @include inter_db;
+      font-size: 16px;
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    &-main {
+      font-size: 32px;
+      font-weight: normal;
+      margin: 0;
+      line-height: 45px;
+    }
+
+    &::after {
+      content: "";
+      width: 100px;
+      height: 1px;
+      display: block;
+      background-color: var(--color_titlebase);
+
+      transform: translateX(-50%);
+      position: relative;
+      left: 50%;
+      margin-top: 10px;
+    }
+  }
+
+  &__subtext {
+    font-size: 16px;
+    color: var(--color_base);
+    margin:0 auto;
+    margin-bottom: 40px;
+    max-width: 780px;
+  }
+
+  &__box {
+    max-width: 450px;
+    background-color: var(--color_titlebase);
+    padding-top: 10px;
+    margin:0 auto 20px auto;
+    color: #FFF;
+
+    &-imgbox {
+      width: 100%;
+      margin: 0;
+
+      &>img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-txtbox {
+      padding: 10px 13px 13px 13px;
+    }
+
+    &-title {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    &-txt {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    &-tags {
+      margin: 0;
+      padding-inline-start: 0;
+      list-style: none;
+      font-size: 12px;
+      display: flex;
+      flex-wrap: wrap;
+
+      &>li {
+        display: inline-block;
+        background-color: #FFF;
+        color: var(--color_titlebase);
+        padding: 0 10px;
+        margin-right: 5px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &__btn {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    width: 240px;
+    background-color: #000;
+    color: #FFF;
+    margin: 40px auto 80px auto;
+  }
+  &__contents{
+    &-pc{
+      display: none;
+    }
+    &-sp{
+      display: block;
+    }
+  }
+}
