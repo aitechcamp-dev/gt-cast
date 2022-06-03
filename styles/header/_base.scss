@@ -16,11 +16,11 @@
     margin: 0;
     align-items: center;
 
-    &>img {
+    & img {
       width: 20.53vw;
     }
 
-    &>p {
+    & p {
       @extend .font__14;
       font-weight: 600;
     }

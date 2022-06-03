@@ -5,13 +5,13 @@
     display: block;
     text-align: center;
 
-    &>img {
+    & img {
       width: 13.8vw;
       max-width: 150px;
       vertical-align: bottom;
     }
 
-    &>p {
+    & p {
       font-size: unquote("min(1.1vw, 12px)");
       margin: 0;
     }
@@ -38,7 +38,8 @@
   &__list {
 
     &>a {
-      padding: 0 0.7vw;
+      // padding: 0 0.7vw;
+      padding: 0 7px;
       display: flex;
       align-items: center;
       text-decoration: none;
