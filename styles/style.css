@@ -148,7 +148,7 @@ body {
   margin: 0;
 }
 
-.font__14, .header__logo > p {
+.font__14, .header__logo p {
   font-size: 3.73vw;
 }
 
@@ -560,11 +560,11 @@ a {
           align-items: center;
 }
 
-.header__logo > img {
+.header__logo img {
   width: 20.53vw;
 }
 
-.header__logo > p {
+.header__logo p {
   font-weight: 600;
 }
 
@@ -2333,7 +2333,7 @@ a {
 }
 
 .topabout__leftbox {
-  background-image: url("/gt-cast/images/top/about/about_bg.png");
+  background-image: url(../../../images/top/about/about_bg.png);
   background-size: cover;
   background-position: 20% 0;
   padding: 45px 4%;
@@ -2708,7 +2708,7 @@ a {
   margin-top: 0px;
   color: #fff;
   z-index: 10;
-  background-image: url(/gt-cast/images/top/topflow/img__bg.jpeg);
+  background-image: url(../../../images/top/topflow/img__bg.jpeg);
   background-size: cover;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -3611,12 +3611,12 @@ a {
     display: block;
     text-align: center;
   }
-  .header__logo > img {
+  .header__logo img {
     width: 13.8vw;
     max-width: 150px;
     vertical-align: bottom;
   }
-  .header__logo > p {
+  .header__logo p {
     font-size: min(1.1vw, 12px);
     margin: 0;
   }
@@ -3642,7 +3642,7 @@ a {
     list-style: none;
   }
   .headernav__list > a {
-    padding: 0 0.7vw;
+    padding: 0 7px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3950,7 +3950,7 @@ a {
     background-color: #FFF;
   }
   .topflow {
-    background-image: url(/gt-cast/images/top/topflow/img__bg.jpeg);
+    background-image: url(../../../images/top/topflow/img__bg.jpeg);
     background-size: cover;
     position: relative;
   }
