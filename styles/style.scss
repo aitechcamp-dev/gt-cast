@@ -25,6 +25,7 @@
 @import "top/column/base";
 @import "top/topflow/base";
 @import "top/faq/base";
+@import "news/base";//岩尾追加
 
 
 
@@ -58,6 +59,7 @@
   @import "top/selectreason/768up";
   @import "top/invite/768up";
   @import "top/column/768up";
+
 }
 
 @media (min-width: 1000px) {
@@ -74,6 +76,8 @@
   @import "privacy/1000up";//岩尾追加
   @import "nf404/1000up";//岩尾追加
   @import "top/selectreason/1000up";
+  @import "news/1000up";//岩尾追加
+
 
 }
 
