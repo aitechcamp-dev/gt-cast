@@ -1,0 +1,10 @@
+@import "../common/system";
+
+
+
+/* construction-トップタイトル */
+.construction-top {
+  width: 100%;
+  height: 236px;
+  background: -webkit-image-set(url(../images/construction/construction__headsp.png) 1x, url(../images/construction/construction__headsp@2x.png) 2x) center center/cover;
+}

@@ -1,0 +1,24 @@
+.columnlist {
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__box{
+    width:340px;
+    margin:0;
+    margin-bottom:80px;
+  }
+
+  &__subtext {
+    margin-bottom: 60px;
+
+  }
+
+  &__wrap {
+    padding-top: 120px;
+  }
+  &__pc{
+    display: block;
+  }
+}

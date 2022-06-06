@@ -1,0 +1,10 @@
+@import "../common/system";
+
+
+/* disaster-トップタイトル */
+.disaster-top {
+  width: 100%;
+  height: 250px;
+  background: -webkit-image-set(url(../images/disaster/disaster__head.png) 1x, url(../images/disaster/disaster__head@2x.png) 2x) center center/cover;
+}
+
