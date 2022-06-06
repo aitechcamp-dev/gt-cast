@@ -9,23 +9,26 @@
 @import "header/base";
 @import "spnav/base";
 @import "footer/base";
-@import "about/base";//岩尾追加
-@import "company/base";//岩尾追加
-@import "estimate/base";//岩尾追加
-@import "contact/base";//岩尾追加
-@import "recruit/base";//岩尾追加
+@import "about/base"; //岩尾追加
+@import "company/base"; //岩尾追加
+@import "estimate/base"; //岩尾追加
+@import "contact/base"; //岩尾追加
+@import "recruit/base"; //岩尾追加
 @import "top/mainvisual/base"; //宇都宮追加
 @import "top/infoslider/base";
 @import "top/selectreason/base";
-@import "entry/base";//岩尾追加
-@import "privacy/base";//岩尾追加
-@import "nf404/base";//岩尾追加
+@import "entry/base"; //岩尾追加
+@import "privacy/base"; //岩尾追加
+@import "nf404/base"; //岩尾追加
 @import "top/about/base";
 @import "top/invite/base";
 @import "top/column/base";
 @import "top/topflow/base";
 @import "top/faq/base";
-@import "news/base";//岩尾追加
+@import "news/base"; //岩尾追加
+@import "construction/base";
+@import "columnlist/base";
+@import "disaster/base";
 
 
 
@@ -39,9 +42,9 @@
 @media (min-width: 600px) {
   @import "common/600up"; //岩尾追加
   @import "header/600up";
-  @import "estimate/600up";//岩尾追加
-  @import "contact/600up";//岩尾追加
-  @import "entry/600up";//岩尾追加
+  @import "estimate/600up"; //岩尾追加
+  @import "contact/600up"; //岩尾追加
+  @import "entry/600up"; //岩尾追加
   @import "top/selectreason/600up";
   @import "top/about/600up";
   @import "top/topflow/600up";
@@ -49,17 +52,17 @@
 }
 
 @media (min-width: 768px) {
-  @import "common/768up";//岩尾追加
-  @import "about/768up";//岩尾追加
-  @import "company/768up";//岩尾追加
-  @import "estimate/768up";//岩尾追加
-  @import "contact/768up";//岩尾追加
-  @import "recruit/768up";//岩尾追加
-  @import "entry/768up";//岩尾追加
+  @import "common/768up"; //岩尾追加
+  @import "about/768up"; //岩尾追加
+  @import "company/768up"; //岩尾追加
+  @import "estimate/768up"; //岩尾追加
+  @import "contact/768up"; //岩尾追加
+  @import "recruit/768up"; //岩尾追加
+  @import "entry/768up"; //岩尾追加
   @import "top/selectreason/768up";
   @import "top/invite/768up";
   @import "top/column/768up";
-
+  @import "columnlist/768up";
 }
 
 @media (min-width: 1000px) {
@@ -71,18 +74,20 @@
   @import "contact/1000up"; //岩尾追加
   @import "top/mainvisual/1000up"; //宇都宮追加
   @import "top/infoslider/1000up";
-  @import "recruit/1000up";//岩尾追加
-  @import "entry/1000up";//岩尾追加
-  @import "privacy/1000up";//岩尾追加
-  @import "nf404/1000up";//岩尾追加
+  @import "recruit/1000up"; //岩尾追加
+  @import "entry/1000up"; //岩尾追加
+  @import "privacy/1000up"; //岩尾追加
+  @import "nf404/1000up"; //岩尾追加
   @import "top/selectreason/1000up";
-  @import "news/1000up";//岩尾追加
-
+  @import "news/1000up"; //岩尾追加
+  @import "columnlist/1000up";
+  @import "construction/1000up";
+  @import "disaster/1000up";
 
 }
 
 @media (min-width: 1100px) {
   @import "header/1100up";
-    @import "top/about/1100up";
+  @import "top/about/1100up";
   @import "top/topflow/1100up";
 }

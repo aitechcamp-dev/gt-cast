@@ -1,0 +1,233 @@
+@import "../common/system";
+
+/* columnlist ページ */
+
+#columnlist {
+  width: 100%;
+}
+
+.columnlist-body__wrap {
+  box-sizing: border-box;
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+
+
+
+.columnlist{
+  position: relative;
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__wrap {
+    @extend .container__width;
+    padding-top: 80px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 0px;
+    color: var(--color_titlebase);
+    position: relative;
+
+    &-sub {
+      @include inter_db;
+      font-size: 16px;
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    &-main {
+      font-size: 32px;
+      font-weight: normal;
+      margin: 0;
+      line-height: 45px;
+    }
+
+    &::after {
+      content: "";
+      width: 100px;
+      height: 1px;
+      display: block;
+      background-color: var(--color_titlebase);
+
+      transform: translateX(-50%);
+      position: relative;
+      left: 50%;
+      margin-top: 10px;
+    }
+  }
+
+  &__subtext {
+    font-size: 16px;
+    color: var(--color_base);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 780px;
+  }
+
+  &__box {
+    max-width: 450px;
+    // background-color: var(--color_titlebase);
+    padding-top: 10px;
+    margin: 0 auto 20px auto;
+box-shadow: 10px 10px 10px -6px rgba(0, 0, 0, 0.3);
+
+    &-imgbox {
+      width: 100%;
+      margin: 0;
+
+      &>img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-txtbox {
+      padding: 10px 13px 13px 13px;
+    }
+
+    &-title {
+      margin: 0;
+      font-size: 24px;
+      color: var(--color_titlebase);
+    }
+
+    &-txt {
+      font-size: 14px;
+      margin: 0;
+      color: var(--color_base);
+    }
+
+    &-tags {
+      margin: 0;
+      padding-inline-start: 0;
+      list-style: none;
+      font-size: 12px;
+      display: flex;
+      flex-wrap: wrap;
+
+      &>li {
+        display: inline-block;
+        border: solid 1px var(--color_titlebase);
+        color: var(--color_titlebase);
+        padding: 0 10px;
+        margin-right: 5px;
+        margin-top: 5px;
+      }
+    }
+    &-footer{
+      display: flex;
+      align-items: flex-end;
+    }
+    &-more{
+      margin:0;
+      font-size:1rem;
+      color: var(--color_titlebase);
+    }
+  }
+
+  &__btn {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    width: 240px;
+    background-color: #000;
+    color: #FFF;
+    margin: 40px auto 80px auto;
+  }
+
+  &__pc {
+    display: none;
+  }
+
+}
+
+/* columnlist-パンくずリスト */
+.columnlist-breadcrumbs {
+  font-size: 16px;
+  color: $c-primary;
+  margin-bottom: 30px;
+
+  ol {
+    padding-left: 0;
+  }
+}
+
+.columnlist-breadcrumb01__item {
+  display: inline;
+  position: relative;
+  line-height: 1.5;
+  color: $c-primary;
+  // font-weight: bold;
+}
+
+.columnlist-breadcrumb01__item:not(:first-child) {
+  margin-left: 24px;
+}
+
+.columnlist-breadcrumb01__item:not(:last-child):after {
+  position: absolute;
+  content: "\f054";
+  top: 50%;
+  right: -16px;
+  transform: translateY(-50%);
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: $c-primary;
+}
+
+.columnlist-breadcrumb01__item a {
+  transition: .2s ease-in-out;
+  color: $c-primary;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.columnlist-breadcrumb01__item a:hover {
+  opacity: 0.7;
+}
+
+
+
+
+/* ページネーション */
+.columnlist-pagination {
+  position: relative;
+  // margin-top: 80px;
+  text-align: center;
+  height: 44px;
+  margin-top:40px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 44px;
+    background-color: $c-primary;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 44px;
+    background-color: $c-primary;
+  }
+}
+
+.columnlist-pagination__content {
+  margin: 0;
+  line-height: 44px;
+}
