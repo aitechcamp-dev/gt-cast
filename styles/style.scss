@@ -29,6 +29,7 @@
 @import "construction/base";
 @import "columnlist/base";
 @import "disaster/base";
+@import "post/base";
 
 
 
@@ -63,6 +64,7 @@
   @import "top/invite/768up";
   @import "top/column/768up";
   @import "columnlist/768up";
+  @import "post/768up";
 }
 
 @media (min-width: 1000px) {
@@ -90,4 +92,5 @@
   @import "header/1100up";
   @import "top/about/1100up";
   @import "top/topflow/1100up";
+    @import "post/1100up";
 }
