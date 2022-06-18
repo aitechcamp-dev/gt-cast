@@ -1,0 +1,11 @@
+.post {
+  &__list {
+    display: flex !important;
+    &>li{
+      margin-right:20px;
+      &:last-child{
+        margin-right:0;
+      }
+    }
+  }
+}
