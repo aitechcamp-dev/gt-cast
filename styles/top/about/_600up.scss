@@ -9,6 +9,7 @@
     height:200px;
     &-imgbox {
       &>img{
+        max-width: 262px;//safari対応
         height:200px;
       }
     }
